@@ -512,7 +512,7 @@ def run(
         if isinstance(m, Detect):
             m.inplace = inplace
             m.onnx_dynamic = dynamic
-            m.export = True
+            m.export = False
 
     for _ in range(2):
         y = model(im)  # dry runs
